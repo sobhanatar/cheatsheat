@@ -6,3 +6,6 @@
 ## CRON Commands
 
 - execute cronjob with different user in a container: `* * * * * sudo docker exec -iu {user name} {service name} bash -c 'php artisan schedule:run' >> /var/log/cron/{service name}.log 2>&1`
+
+## Grep Docker logs
+- docker logs -f --tail 100 container_name 2>&1 | grep handle
