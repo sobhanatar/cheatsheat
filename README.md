@@ -9,3 +9,7 @@
 
 ## Grep Docker logs
 - docker logs -f --tail 100 container_name 2>&1 | grep handle
+
+
+## Delete keys with pattern
+> redis-cli --scan --pattern _PHCR*| xargs redis-cli del
