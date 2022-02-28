@@ -12,4 +12,4 @@
 
 
 ## Delete keys with pattern
-> redis-cli --scan --pattern _PHCR*| xargs redis-cli del
+- redis-cli --scan --pattern *pattern*| xargs redis-cli del
