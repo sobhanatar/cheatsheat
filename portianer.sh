@@ -1,1 +1,1 @@
-docker pull portainer/portainer-ce && docker stop <container-name> && docker run -d -p 8000:8000 -p 9443:9443 -p 9000:9000 --name=portainer --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:latest
+docker pull portainer/portainer-ce && docker stop <container-name> && docker rm <container-name> && docker run -d -p 8000:8000 -p 9443:9443 -p 9000:9000 --name=<container-name> --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
